@@ -5,12 +5,12 @@
   const DELETE = "DELETE";
   
   /**
-  * Wrapper function for `fetch()` to streamline use of the Discord API.
-  * @async
-  * @param {string} endpoint - Discord API endpoint.
-  * @param {string} method - Options method.
-  * @param {string} token - Options headers authorization.
-  */
+   * Wrapper function for `fetch()` to streamline use of the Discord API.
+   * @async
+   * @param {string} endpoint - Discord API endpoint.
+   * @param {string} method - Options method.
+   * @param {string} token - Options headers authorization.
+   */
   async function api(endpoint, method, token) {
     async function wait(ms) {
       console.log(`waiting ${ms}ms`);
@@ -56,14 +56,14 @@
   }
   
   /**
-  * Creates a search query and returns the response from the Discord API.
-  * @async
-  * @param {Object} channel - Represents a guild or DM channel within
-  *                           Discord.
-  * @param {string} token - Options headers authorization.
-  * @param {string} user_id_cache - Author ID.
-  * @param {number} offset - Number of results to skip.
-  */
+   * Creates a search query and returns the response from the Discord API.
+   * @async
+   * @param {Object} channel - Represents a guild or DM channel within
+   *                           Discord.
+   * @param {string} token - Options headers authorization.
+   * @param {string} user_id_cache - Author ID.
+   * @param {number} offset - Number of results to skip.
+   */
   async function search(channel, token, user_id_cache, offset) {
     // the client only uses multiples of 25 as offsets
     if (offset % 25 !== 0) {
