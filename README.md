@@ -4,7 +4,7 @@
 # bonfire
 message deletion script for Discord
 
-# motivation
+## motivation
 Discord stores user-generated content indefinitely, and offers no viable options to delete it.
 Discord does not delete user-generated content when a user deletes their account.
 
@@ -12,3 +12,12 @@ If a user wants to manually delete 200,000 messages, this task takes a minimum o
 To put it bluntly, that is unacceptable.
 
 This project intends to give users a viable option to delete user-generated content.
+
+## Support
+Supported channel and message types:
+| Channel Type  | Message Type |
+|---------------|--------------|
+| `GUILD_TEXT`  | `DEFAULT`    |
+| `DM`          | `REPLY`      |
+| `GUILD_VOICE` |              |
+| `GROUP_DM`    |              |
